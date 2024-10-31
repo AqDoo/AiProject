@@ -9,11 +9,11 @@ import praw  # Импортируем PRAW для работы с Reddit
 nltk.download('vader_lexicon')
 
 # Настройка Reddit API
-reddit = praw.Reddit(client_id='B2Gcc5A3cWdUvBZ6oWvetg',
-                     client_secret='nf3SO5phIQ5s200LXkmb4v7hdvyhbA',
-                     user_agent='social_media_analysis/1.0 by /u/Happy_Cow_9698')
+reddit = praw.Reddit(client_id='',
+                     client_secret='',
+                     user_agent='social_media_analysis/1.0 by /u/')
 
-API_KEY = 'AIzaSyAWVF6sSwhFIYJKwhUpKPqEdOlpVx7bfOE'
+API_KEY = ''
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 def get_video_details(video_id):
