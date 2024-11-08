@@ -14,7 +14,7 @@ import vk_api
 # Убедитесь, что VADER загружен
 nltk.download('vader_lexicon')
 
-<<<<<<< HEAD
+
 
 # Настройка VK API
 vk_session = vk_api.VkApi(token='')  # Замените YOUR_VK_API_TOKEN на ваш токен
@@ -25,22 +25,11 @@ reddit = praw.Reddit(client_id='',
                      client_secret='',
                      user_agent='social_media_analysis/1.0 by /u/')
 
+
+
+
 # Настройка YouTube API
 API_KEY = ''  # Замените YOUR_YOUTUBE_API_KEY на ваш ключ API
-=======
-
-# Настройка VK API
-vk_session = vk_api.VkApi(token='f5af837cf5af837cf5af837c67f68d3514ff5aff5af837c928a50d4873308d531b0a879')  # Замените YOUR_VK_API_TOKEN на ваш токен
-vk = vk_session.get_api()
-
-# Настройка Reddit API
-reddit = praw.Reddit(client_id='B2Gcc5A3cWdUvBZ6oWvetg',
-                     client_secret='nf3SO5phIQ5s200LXkmb4v7hdvyhbA',
-                     user_agent='social_media_analysis/1.0 by /u/Happy_Cow_9698')
-
-# Настройка YouTube API
-API_KEY = 'AIzaSyAWVF6sSwhFIYJKwhUpKPqEdOlpVx7bfOE'  # Замените YOUR_YOUTUBE_API_KEY на ваш ключ API
->>>>>>> 408c737c3ec823264b7ebc506c6bc0736ba93f77
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 def get_video_details(video_id):
