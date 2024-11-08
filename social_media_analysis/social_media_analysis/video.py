@@ -93,7 +93,7 @@ def download_youtube_video(url, output_path='videos'):
 
 # Пример использования
 if __name__ == '__main__':
-    youtube_url = 'https://www.youtube.com/watch?v=example_video_id'  # Укажите ссылку на видео
+    youtube_url = 'https://www.youtube.com/watch?v=lQBmZBJCYcY'  # Укажите ссылку на видео
     video_path = download_youtube_video(youtube_url)
 
     # Вызов функции анализа видео

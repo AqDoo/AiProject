@@ -8,18 +8,25 @@
 <body>
     <h1>Analysis Results</h1>
 
-    <h2>Reddit Results</h2>
-    <ul>
-        {% for result in reddit_results %}
-            <li>
-                <strong>{{ result.title }}</strong><br>
+<h2>Reddit Results</h2>
+<ul>
+    {% for result in reddit_results %}
+        <li>
+            <strong>{{ result.title }}</strong><br>
+            {% if result.image_sentiment %}
+                <img src="{{ result.url }}" alt="Reddit Image" style="max-width: 200px; max-height: 200px;"><br>
+                Image Sentiment: {{ result.image_sentiment }}<br>
+            {% endif %}
+            {% if result.sentiment %}
                 Sentiment: {{ result.sentiment }}<br>
-                URL: <a href="{{ result.url }}">{{ result.url }}</a>
-            </li>
-        {% empty %}
-            <li>No Reddit results found.</li>
-        {% endfor %}
-    </ul>
+            {% endif %}
+            URL: <a href="{{ result.url }}">{{ result.url }}</a>
+        </li>
+    {% empty %}
+        <li>No Reddit results found.</li>
+    {% endfor %}
+</ul>
+
 
     <h2>YouTube Results</h2>
     <ul>
